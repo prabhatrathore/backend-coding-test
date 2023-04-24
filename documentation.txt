@@ -1,0 +1,26 @@
+==============DOCUMENTATION===================
+
+here are documentation of api's which we use in this project:
+
+GET METHOD : FIRST API is used to fetch successfull message when we hitting this endpoint "/health".
+
+POST METHOD : SECOND API 's endpoint is '/rides' 
+
+ used to insert data to databse after successfully validation pass, validation like startLatitude it should be one of the states startLatitude < -90 or startLatitude > 90 or startLongitude < -180 or startLongitude > 180  ,
+ endLatitude should be  one of the states endLatitude < -90 or endLatitude > 90 or endLongitude < -180 or endLongitude > 180,
+
+  typeof riderName !== 'string' or riderName.length < 1 etc some validtion are as follows .
+
+after pass all this validation then store all property in object and these obejct are save or create into database.
+
+
+
+ GET METHOD : THIRD API 's endpoint: '/rides'
+ it it used fetch all data of rides from database.
+
+
+
+
+
+GET METHOD : FOUTH API's endpoint: '/rides/:id'  
+to fetch specific /particular document from database       
